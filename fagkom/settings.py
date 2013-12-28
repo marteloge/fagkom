@@ -125,7 +125,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'south',
     'django.contrib.admin',
-    'apps.alkoformel',
+    'fagkom.apps.alkoformel',
+    'fagkom.apps.main',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
