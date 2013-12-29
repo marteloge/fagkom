@@ -3,5 +3,10 @@
 *.pot
 *.pyc
 local_settings.py
+
+# Database name (now defined by settings.py to be db.sqlite3)
 test.db
+db.sqlite3
+
+# Virtualenv
 env/*
