@@ -2,7 +2,7 @@
 
 Fagkom.com &lt;3
 
-### Oppsett av fagkom.com på egen box/mac (Google e.l. for windows)
+#### Oppsett av fagkom.com på egen box/mac (Google e.l. for windows)
 
 1. Gå inn i mappen der du ønsker å ha prosjektet f.eks. `/home/<brukernavn>/webapps/`.
 2. Klon prosjektet ved å kjøre git-kommandoen `git clone https://github.com/marteloge/fagkom.git`
