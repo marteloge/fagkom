@@ -14,7 +14,7 @@ class RequireLoginMiddleware(object):
     def __init__(self):
         self.require_login_path = getattr(settings,
                                           'REQUIRE_LOGIN_PATH',
-                                          '/accounts/login/')
+                                          '/auth/login/')
 
     def process_request(self, request):
         if ((request.path != self.require_login_path) and

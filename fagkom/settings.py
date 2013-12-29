@@ -102,9 +102,13 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # This line should be added later, to obviate the need for @login_required
-    # 'fagkom.common.middleware.RequireLoginMiddleware',
+
+    # Custom middleware to require site wide authentication without
+    # login_required
+    'fagkom.common.middleware.RequireLoginMiddleware',
 )
+
+LOGIN_URL = "/auth/login"
 
 ROOT_URLCONF = 'fagkom.urls'
 
@@ -112,7 +116,8 @@ ROOT_URLCONF = 'fagkom.urls'
 WSGI_APPLICATION = 'fagkom.wsgi.application'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Put strings here, like "/home/html/django_templates" or
+    # "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
@@ -126,8 +131,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'south',
     'django.contrib.admin',
-    'fagkom.apps.alkoformel',
     'fagkom.apps.main',
+    'fagkom.apps.auth',
+    'fagkom.apps.alkoformel',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
