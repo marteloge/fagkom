@@ -75,6 +75,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(BASE_DIR, 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -105,7 +106,7 @@ MIDDLEWARE_CLASSES = (
 
     # Custom middleware to require site wide authentication without
     # login_required
-    'fagkom.common.middleware.RequireLoginMiddleware',
+    # 'fagkom.common.middleware.RequireLoginMiddleware',
 )
 
 LOGIN_URL = "/auth/login"
@@ -134,6 +135,7 @@ INSTALLED_APPS = (
     'fagkom.apps.main',
     'fagkom.apps.auth',
     'fagkom.apps.alkoformel',
+    'fagkom.apps.beer_penalty',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
