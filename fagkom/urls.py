@@ -6,9 +6,10 @@ admin.autodiscover()
 
 urlpatterns = patterns(
     '',
-    url(r'^$', include('fagkom.apps.main.urls')),
+    url(r'^beer-penalty/', include('fagkom.apps.beer_penalty.urls')),
     url(r'auth/', include('fagkom.apps.auth.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^', include('fagkom.apps.main.urls')),
 
     # Athentication (solved by auth app)
     # url(r'^accounts/login/', 'django.contrib.auth.views.login',

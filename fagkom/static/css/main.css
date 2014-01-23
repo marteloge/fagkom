@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+    background-color: #efeeee;
+}
+
+p {
+    margin: 0px 5px;
+    color: #666;
+}
+
+#sidebar {
+    background-color: white;
+    width: 100px;
+    height: 100%;
+    float: left;
+}
+
+
+h1 {
+    font-size: 20px;
+    margin: 0;
+    color: 666;
+}
+
+a:link {
+    color: #666;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff1493;
+    text-decoration: none;
+}
+

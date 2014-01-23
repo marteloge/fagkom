@@ -2,12 +2,27 @@
 <html>
 <head>
   <title>Fagkom &#9829; &#9829; &#9829;</title>
+  <link href="{{ STATIC_URL }}css/main.css" rel="stylesheet">   
 </head>
 <body>
-    <h1>Fagkom 4 evah!</h1>
-    {% block content %}
-      <p>Home</p>
-      <form><button name="logout" type="submit" formaction="auth/logout">Logout</button></form>
-    {% endblock %}
+  <div id="wrap">
+    <div id="header">
+    </div>
+    <div id="body">
+      <div id="sidebar">
+        <img id="logo" src="{{ STATIC_URL }}img/fagkom.png">
+        <h1>Fagkom 4 evah!</h1>
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'beer_penalty' %}">Ølstraff</a></li>
+        </ul>
+        <form><button name="logout" type="submit" formaction="auth/logout">Logout</button></form>
+      </div>
+      <div id="content">
+          {% block content %}
+          {% endblock %}
+      </div>
+    </div>
+  </div>
 </body>
 </html>

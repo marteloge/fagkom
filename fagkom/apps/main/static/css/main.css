@@ -1,0 +1,78 @@
+body{
+    margin: 0px;
+    background-color: #efeeee;
+}
+
+p {
+    margin: 0px 5px;
+    color: #666;
+}
+
+/*#wrap {
+    width: 500px;
+    margin: 0 auto;
+}*/
+
+#body {
+    overflow: auto;
+}
+
+#sidebar {
+    width: 200px;
+    min-height: 800px;
+    float: left;
+    border-right: solid 1px #999;
+    padding: 0 10px;
+    -webkit-box-shadow: 2px 0px 5px -2px #888;
+    list-style-type: none;
+}
+
+#content {
+    margin: auto;
+    padding-left: 10px;
+    float: left;
+}
+
+#logo {
+    width: 100%;
+    /*padding: 10px;*/
+}
+
+#header {
+    min-height: 20px;
+}
+
+#beer-penalty table tr td {
+    border: 1px solid #444;
+    padding: 4px 10px;
+}
+
+#beer-penalty table {
+    margin: 10px;
+}
+
+.table-header {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 10px;
+    color: #444;
+}
+
+a:link {
+    color: #666;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff1493;
+    text-decoration: none;
+}
+
