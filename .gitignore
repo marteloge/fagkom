@@ -4,6 +4,7 @@
 *.pyc
 local_settings.py
 *.DS_Store
+.AppleDouble
 
 # Database name (now defined by settings.py to be db.sqlite3)
 test.db
