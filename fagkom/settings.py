@@ -135,7 +135,7 @@ INSTALLED_APPS = (
     'fagkom.apps.main',
     'fagkom.apps.auth',
     'fagkom.apps.alkoformel',
-    #'fagkom.apps.beer_penalty',
+    'fagkom.apps.beer_penalty',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'

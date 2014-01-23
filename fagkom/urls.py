@@ -6,6 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns(
     '',
+    url(r'beer_penalty', include('fagkom.apps.beer_penalty.urls')),
     url(r'auth/', include('fagkom.apps.auth.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('fagkom.apps.main.urls')),
