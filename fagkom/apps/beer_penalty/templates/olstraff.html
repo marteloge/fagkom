@@ -3,45 +3,9 @@
 {% block content %}
 <div id="beer-penalty">
 
-    <!-- All penalties -->
-    <h1>Alle straffer</h1>
-    <table>
-        <tr class="table-header">
-            <td>Dato</td>
-            <td>Antall øl</td>
-            <td>Antall vin</td>
-            <td>Person</td>
-            <td>Grunn</td>
-        </tr>
-        {% for p in penalties %}
-        <tr>
-            <td>{{ p.date }}</td>
-            <td>{{ p.beer_amount }}</td>
-            <td>{{ p.wine_amount }}</td>
-            <td>{{ p.user }}</td>
-            <td>{{ p.justification }}</td>
-        </tr>
-        {% endfor %}
-    </table>
+    {% include 'penalty-list.html' %}
 
-    <!-- Highscore list -->
-    <h1>Highscoreliste</h1>
-    <table>
-        <tr class="table-header">
-            <td>Person</td>
-            <td>Antall øl</td>
-            <td>Antall vin</td>
-            <td>Total score</td>
-        </tr>
-        {% for user in users %}
-        <tr>
-            <td>{{ user.username }}</td>
-            <td>{{ user.beer_amount }}</td>
-            <td>{{ user.wine_amount }}</td>
-            <td>{{ user.get_total_score }}</td>
-        </tr>
-        {% endfor %}
-    </table>
+    {% include 'highscore-list.html' %}
 
     <!-- Add new penalty -->
     <h1>Legg til ny ølstraff</h1>

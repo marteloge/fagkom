@@ -1,30 +1,42 @@
 body{
     margin: 0px;
-    background-color: #efeeee;
+    /*background-color: #7A8498;*/
+    background-color: #aaa;
+    color: #fff;
+    font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }
 
 p {
     margin: 0px 5px;
-    color: #666;
+    color: #fff;
 }
 
-/*#wrap {
-    width: 500px;
-    margin: 0 auto;
-}*/
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /*background-color: #aaa;*/
+}
+
+li {
+    padding: 5px 10px;
+}
 
 #body {
     overflow: auto;
 }
 
 #sidebar {
+    background-color: #22262A;
     width: 200px;
-    min-height: 800px;
+    min-height: 810px;
     float: left;
-    border-right: solid 1px #999;
-    padding: 0 10px;
-    -webkit-box-shadow: 2px 0px 5px -2px #888;
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-shadow: 2px 0px 5px -2px #000;
     list-style-type: none;
+
 }
 
 #content {
@@ -35,39 +47,91 @@ p {
 
 #logo {
     width: 100%;
-    /*padding: 10px;*/
+    box-shadow: 10px #000;
+}
+
+#logo-container {
+    padding: 10px;
 }
 
 #header {
-    min-height: 20px;
+    min-height: 0px;
 }
 
-#beer-penalty table tr td {
-    border: 1px solid #444;
-    padding: 4px 10px;
+table {
+    margin: 0 10px;
+    border-spacing: 0;
+    border: 1px solid #363B40;
+    border-radius: 2px 2px 0px 0px;
+    box-shadow: 0px 0px 10px 1px #363B40;
 }
 
-#beer-penalty table {
-    margin: 10px;
+td {
+    padding: 4px 20px;
+    border-top: 1px dashed #363B40;
 }
 
-.table-header {
-    font-weight: bold;
+
+th {
+    padding: 4px 20px;
+    background-color: #363B40;
+    text-align: left;
 }
+
+tr {
+    border: 2px dashed #fff;
+    background-color: #5D6268;
+}
+/*
+tr:last-child < td {
+    border: none;
+}
+*/
+/*table tr.odd {
+    background-color: #5D6268;
+    
+}
+
+table tr.even {
+    background-color: #363B40;
+}*/
 
 h1 {
     font-size: 25px;
     margin: 10px;
-    color: #444;
+    color: #fff;
+}
+
+button, .button {
+    height: 30px;
+    padding: 0 20px;
+    margin: 10px;
+    background-color: #363B40;
+    color: #fff;
+    border-radius: 4px;
+    border: 0px solid #aaa;
+}
+
+input {
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+    padding: 0px 8px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #eee;
 }
 
 a:link {
-    color: #666;
+    color: #fff;
     text-decoration: none;
 }
 
 a:visited {
-    color: #666;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -75,4 +139,3 @@ a:hover {
     color: #ff1493;
     text-decoration: none;
 }
-

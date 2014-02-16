@@ -1,0 +1,18 @@
+<!-- Highscore list -->
+<h1>Highscoreliste</h1>
+<table>
+    <tr class="table-header">
+        <th>Person</th>
+        <th>Antall øl</th>
+        <th>Antall vin</th>
+        <th>Total score</th>
+    </tr>
+    {% for user in users %}
+    <tr class="{% cycle 'odd' 'even' %}">
+        <td>{{ user.username }}</td>
+        <td>{{ user.beer_amount }}</td>
+        <td>{{ user.wine_amount }}</td>
+        <td>{{ user.get_total_score }}</td>
+    </tr>
+    {% endfor %}
+</table>

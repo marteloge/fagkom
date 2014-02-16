@@ -1,0 +1,23 @@
+<!-- All penalties -->
+<h1>Alle straffer</h1>
+<table>
+    <tr>
+        <th>Dato</th>
+        <th>Antall øl</th>
+        <th>Antall vin</th>
+        <th>Person</th>
+        <th>Grunn</th>
+    </tr>
+    {% for p in penalties %}
+    <tr class="{% cycle 'odd' 'even' %}">
+        <td>{{ p.date }}</td>
+        <td>{{ p.beer_amount }}</td>
+        <td>{{ p.wine_amount }}</td>
+        <td>{{ p.user }}</td>
+        <td>{{ p.justification }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<form>
+    <input class="button" type="submit" name="new_button">
+</form>

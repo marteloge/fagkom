@@ -2,8 +2,9 @@
 {% load staticfiles %}
 <html>
 <head>
-  <title>Fagkom &#9829; &#9829; &#9829;</title>
-  <link href="/static/css/main.css" rel="stylesheet">   
+  <title>Fagkom</title>
+  <link href="/static/css/main.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/static/img/fagkom.png"> 
 </head>
 <body>
   <div id="wrap">
@@ -11,7 +12,9 @@
     </div>
     <div id="body">
       <div id="sidebar">
-        <img id="logo" src="{{ STATIC_URL }}img/fagkom.png">
+        <div id="logo-container">
+          <img id="logo" src="{{ STATIC_URL }}img/fagkom.png">
+        </div>
         <h1>Fagkom 4 evah!</h1>
         <ul>
           <li><a href="{% url 'home' %}">Home</a></li>
